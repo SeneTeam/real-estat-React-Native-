@@ -2,8 +2,6 @@ import { styles } from './styles.js';
 import { Image, View, TouchableOpacity, } from 'react-native';
 import { NavigationProp } from '@react-navigation/native';
 import React, { useState } from 'react';
-import { MaterialCommunityIcons } from '@expo/vector-icons';
-import * as Progress from 'react-native-progress';
 import { RadioButton, } from 'react-native-paper';
 import { Text } from '../../components/Themed';
 
@@ -12,12 +10,10 @@ const QuestionGender = ({ navigation, route }: { navigation: NavigationProp<any>
     const [value, setValue] = React.useState('first');
     return (
         <View style={styles.questionWrap}>
-            {/* <View style={styles.questionHeader}>
+            <View style={styles.questionHeader}>
                 <TouchableOpacity
-                    onPress={() =>
-                        navigation.goBack()} >
-                    <Image style={{ width: '50px', height: '50px', margin: '25px' }}
-                        source={require('./assets/icons/backBtn.png')} />
+                    onPress={() => navigation.goBack()} >
+                    <Image style={{ width: 50, height: 50, margin: 25 }} source={require('../../assets/icons/backBtn.png')} />
                 </TouchableOpacity>
             </View>
             <View style={styles.subTextView_title}>
@@ -36,7 +32,7 @@ const QuestionGender = ({ navigation, route }: { navigation: NavigationProp<any>
                     </View>
                 </RadioButton.Group>
 
-            </View> */}
+            </View>
             <View style={styles.questionBtn} >
                 <TouchableOpacity
                     onPress={() => navigation.navigate('QuestionAge')}

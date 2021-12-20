@@ -94,6 +94,7 @@ export const styles = StyleSheet.create({
     marginBottom: '10%',
   },
   subTextView1: {
+    flex: 1,
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
@@ -125,6 +126,7 @@ export const styles = StyleSheet.create({
     borderRadius: 23,
   },
   questionBtn: {
+    flex: 1,
     paddingRight: '7%',
     paddingLeft: '7%',
     width: '100%',
@@ -141,11 +143,10 @@ export const styles = StyleSheet.create({
     height: '20%'
   },
   radioBtn: {
-    height: '36%',
-    marginTop: '5%',
     alignItems: 'flex-start',
     paddingLeft: '7%',
     paddingRight: '7%',
+    marginRight:'5%'
   },
   radioText: {
     color: 'blue',
