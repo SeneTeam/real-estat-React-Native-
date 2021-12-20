@@ -1,8 +1,7 @@
 import { styles } from '../../screens/authScreens/styles.js';
-import { Image, View, TouchableOpacity, TextInput, StyleSheet } from 'react-native';
+import { Image, View, TouchableOpacity, StyleSheet } from 'react-native';
 import { NavigationProp } from '@react-navigation/native';
 import React, { useState, useEffect } from 'react';
-import OutlineInput from 'react-native-outline-input';
 import { Text } from '../../components/Themed';
 import { SafeAreaView, } from 'react-native';
 
@@ -48,19 +47,20 @@ const EnterCode = ({ navigation, route }: { navigation: NavigationProp<any>, rou
         }
     }, [value])
     return (
-        <View style={styles.loginPageStyle}>
-            {/* <View style={styles.loginHeader}>
+        <View style={styles.loginWrap}>
+            <View >
                 <TouchableOpacity
-                    onPress={() =>
-                        navigation.goBack()} >
-                    <Image style={styles.buttonImage} source={require('./assets/icons/backBtn.png')} />
+                    onPress={() => navigation.goBack()} >
+                    <Image style={{ width: 50, height: 50, margin: 25 }} source={require('../../assets/icons/backBtn.png')} />
                 </TouchableOpacity>
             </View>
-            <View style={styles.subTextView}>
-                <Text style={styles.title}>Check email</Text>
-            </View>
-            <View style={styles.subTextView}>
-                <Text style={styles.subText}>Enter the code that we sent to your email</Text>
+            <View style={{ marginBottom: 15 }}>
+                <View style={{ alignItems: 'center' }}>
+                    <Text style={styles.title}>Check email</Text>
+                </View>
+                <View style={{ alignItems: 'center', }}>
+                    <Text style={styles.subTextForgot}>Enter the code that we sent to your email</Text>
+                </View>
             </View>
             <View style={styles.subTextView}>
                 <SafeAreaView style={stylees.root}>
@@ -86,15 +86,9 @@ const EnterCode = ({ navigation, route }: { navigation: NavigationProp<any>, rou
                 </SafeAreaView>
             </View>
 
-            <View style={{ padding: '7%', width: '100%', justifyContent: 'center', marginTop: '38%' }}>
-                <TouchableOpacity
-                // onPress={() => navigation.navigate('Register', { name: 'Jane' })}
-                >
-                    <View style={styles.subTextView}>
-                        <Text style={styles.subText} >Resend Code</Text>
-                    </View>
-                </TouchableOpacity>
-            </View> */}
+            <View style={{ padding: '7%', width: '100%', justifyContent: 'center', marginTop: '38%', alignItems: 'center' }}>
+                <Text style={styles.subText} >Resend Code</Text>
+            </View>
 
         </View>
     );

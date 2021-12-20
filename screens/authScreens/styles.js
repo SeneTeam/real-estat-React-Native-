@@ -29,19 +29,23 @@ export const styles = StyleSheet.create({
     marginTop: '2%',
     marginBottom: '2%',
   },
+  subTextForgot: {
+    fontSize: 16,
+    textAlign: 'center',
+    marginTop: '2%',
+    marginBottom: '2%',
+  },
   textView: {
     flex: 4,
     width: '100%',
     backgroundColor: 'white'
   },
   subTextView: {
-    flex: 1,
+    // flex: 1,
     width: '100%',
     paddingLeft: '7%',
     paddingRight: '7%',
     textAlign: 'center',
-    display:'flex',
-    justifyContent:'center'
   },
   btnView: {
     flex: 1,
@@ -72,5 +76,18 @@ export const styles = StyleSheet.create({
   loginWrap: {
     flex: 1,
     backgroundColor: 'white'
+  },
+  loginVerticalPart: {
+    alignItems: 'center',
+    flex: 1,
+    display: 'flex',
+    justifyContent: 'center'
+  },
+  loginForm: {
+    // flex: 1,
+    display: 'flex',
+    justifyContent: 'center',
+    paddingLeft: '5%',
+    paddingRight: '4%',
   },
 });

@@ -12,21 +12,24 @@ const ForgotPass = ({ navigation, route }: { navigation: NavigationProp<any>, ro
         navigation.navigate('Register')
     }
     return (
-        <View style={styles.loginPageStyle}>
-            {/* <View style={styles.loginHeader}>
+        <View style={styles.loginWrap}>
+            <View >
                 <TouchableOpacity
-                    onPress={() =>
-                        navigation.goBack()} >
-                    <Image style={styles.buttonImage} source={require('./assets/icons/backBtn.png')} />
+                    onPress={() => navigation.goBack()} >
+                    <Image style={{ width: 50, height: 50, margin: 25 }} source={require('../../assets/icons/backBtn.png')} />
                 </TouchableOpacity>
             </View>
-            <View style={styles.subTextView_title}>
-                <Text style={styles.title}>Forgot password</Text>
+
+            <View style={{marginBottom:15}}>
+                <View style={{alignItems:'center'}}>
+                    <Text style={styles.title}>Forgot password</Text>
+                </View>
+                <View style={{alignItems:'center',}}>
+                    <Text style={styles.subTextForgot}>Please enter your email specified during registration</Text>
+                </View>
             </View>
-            <View style={styles.subTextView}>
-                <Text style={styles.subText}>Please enter your email specified during registration</Text>
-            </View>
-            <View style={styles.loginForm_input}>
+
+            <View style={styles.loginForm}>
                 <OutlineInput
                     value={email}
                     onChangeText={(e: string) => setEmail(e)}
@@ -45,8 +48,7 @@ const ForgotPass = ({ navigation, route }: { navigation: NavigationProp<any>, ro
                 >
                     <Text style={styles.btnStyle} >SEND</Text>
                 </TouchableOpacity>
-            </View> */}
-            forgot
+            </View>
         </View>
     );
 };

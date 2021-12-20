@@ -20,12 +20,12 @@ const Login = ({ navigation, route }: { navigation: NavigationProp<any>, route: 
                 </TouchableOpacity>
             </View>
             <View style={{ flex: 1 }}>
-                <View style={{ alignItems: 'center', flex: 1 }}>
+                <View style={styles.loginVerticalPart}>
                     <Text style={styles.title}>Welcome Back!</Text>
                 </View>
             </View>
             <View style={{ flex: 1 }}>
-                <View >
+                <View style={styles.loginForm}>
                     <OutlineInput
                         value={email}
                         onChangeText={(e: string) => setEmail(e)}
@@ -38,7 +38,7 @@ const Login = ({ navigation, route }: { navigation: NavigationProp<any>, route: 
                         passiveValueColor="#30c0e9"
                     />
                 </View>
-                <View >
+                <View style={styles.loginForm}>
                     <OutlineInput
                         value={password}
                         onChangeText={(e: string) => setPassword(e)}
@@ -51,7 +51,7 @@ const Login = ({ navigation, route }: { navigation: NavigationProp<any>, route: 
                         passiveValueColor="#30c0e9"
                     />
                 </View>
-                <View style={{ width: '100%', justifyContent: 'center' }}>
+                <View style={styles.loginForm}>
                     <TouchableOpacity
                         onPress={() => navigation.navigate('Root', { name: 'Jane' })}
                     >
@@ -60,15 +60,15 @@ const Login = ({ navigation, route }: { navigation: NavigationProp<any>, route: 
                 </View>
             </View>
             <View style={{ flex: 1 }}>
-                <View style={{ flex: 1, alignItems: 'center' }}>
-                    <View style={{ flex: 1 }}>
+                <View style={styles.loginVerticalPart}>
+                    <View style={styles.loginVerticalPart}>
                         <TouchableOpacity
                             onPress={() => navigation.navigate('ForgotPass', { name: 'Jane' })}
                         >
                             <Text style={styles.subText} >forgot Password</Text>
                         </TouchableOpacity>
                     </View>
-                    <View style={{ flex: 1 }}>
+                    <View style={styles.loginVerticalPart}>
                         <Text style={styles.loginTitle}>Don't have an account?&nbsp;
                             <Text onPress={onPress} style={styles.login_btnStyle}>Sign Up</Text>
                         </Text>
