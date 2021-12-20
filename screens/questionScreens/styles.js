@@ -143,10 +143,11 @@ export const styles = StyleSheet.create({
     height: '20%'
   },
   radioBtn: {
+    flex: 1,
     alignItems: 'flex-start',
     paddingLeft: '7%',
     paddingRight: '7%',
-    marginRight:'5%'
+    marginRight: '5%'
   },
   radioText: {
     color: 'blue',
@@ -162,12 +163,38 @@ export const styles = StyleSheet.create({
     paddingRight: '7%',
   },
   progGender: {
-    height: 20,
+    height: 12,
     flexDirection: "row",
     width: '100%',
-    backgroundColor: 'white',
+    backgroundColor: '#D0D8E0',
     borderColor: '#000',
-    borderWidth: 2,
+    borderRadius: 5
+  },
+  progGenderIN: {
+    height: 12,
+    flexDirection: "row",
+    width: '30%',
+    backgroundColor: '#7BC67E',
+    borderColor: '#7BC67E',
+    borderWidth: 1,
+    borderRadius: 5
+  },
+  progGenderINAge: {
+    height: 12,
+    flexDirection: "row",
+    width: '60%',
+    backgroundColor: '#7BC67E',
+    borderColor: '#7BC67E',
+    borderWidth: 1,
+    borderRadius: 5
+  },
+  progGenderINId:{
+    height: 12,
+    flexDirection: "row",
+    width: '99%',
+    backgroundColor: '#7BC67E',
+    borderColor: '#7BC67E',
+    borderWidth: 1,
     borderRadius: 5
   },
 });

@@ -33,23 +33,27 @@ const QuestionGender = ({ navigation, route }: { navigation: NavigationProp<any>
                 </RadioButton.Group>
 
             </View>
-            <View style={styles.questionBtn} >
-                <TouchableOpacity
-                    onPress={() => navigation.navigate('QuestionAge')}
-                >
-                    <Text style={styles.btnStyle} >CONTINUE</Text>
-                </TouchableOpacity>
-            </View>
-            <View style={styles.questionProgress} >
-                <View><Text style={{ textAlign: 'right' }}>Completed &nbsp; 30%</Text></View>
-                <View style={styles.progGender}></View>
-            </View>
-            <View style={styles.subTextView1}>
-                <TouchableOpacity
-                // onPress={() => navigation.navigate('ForgotPass', { name: 'Jane' })}
-                >
-                    <Text style={styles.subTextSkip} >Skip</Text>
-                </TouchableOpacity>
+            <View style={{ flex: 1 }}>
+                <View style={styles.questionBtn} >
+                    <TouchableOpacity
+                        onPress={() => navigation.navigate('QuestionAge')}
+                    >
+                        <Text style={styles.btnStyle} >NEXT</Text>
+                    </TouchableOpacity>
+                </View>
+                <View style={styles.questionProgress} >
+                    <View><Text style={{ textAlign: 'right', color: '#ACB7C2' }}>Completed &nbsp; <Text style={{ color: '#7BC67E' }}>30%</Text></Text></View>
+                    <View style={styles.progGender}>
+                        <View style={styles.progGenderIN}></View>
+                    </View>
+                </View>
+                <View style={styles.subTextView1}>
+                    <TouchableOpacity
+                    // onPress={() => navigation.navigate('ForgotPass', { name: 'Jane' })}
+                    >
+                        <Text style={styles.subTextSkip} >Skip</Text>
+                    </TouchableOpacity>
+                </View>
             </View>
         </View>
     );
