@@ -62,7 +62,7 @@ const EnterCode = ({ navigation, route }: { navigation: NavigationProp<any>, rou
                     <Text style={styles.subTextForgot}>Enter the code that we sent to your email</Text>
                 </View>
             </View>
-            <View style={styles.subTextView}>
+            <View style={styles.subTextView1}>
                 <SafeAreaView style={stylees.root}>
                     <CodeField
                         ref={ref}
@@ -86,7 +86,7 @@ const EnterCode = ({ navigation, route }: { navigation: NavigationProp<any>, rou
                 </SafeAreaView>
             </View>
 
-            <View style={{ padding: '7%', width: '100%', justifyContent: 'center', marginTop: '38%', alignItems: 'center' }}>
+            <View style={{ flex: 1, padding: '7%', width: '100%', justifyContent: 'center', alignItems: 'center' }}>
                 <Text style={styles.subText} >Resend Code</Text>
             </View>
 

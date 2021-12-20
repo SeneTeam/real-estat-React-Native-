@@ -47,6 +47,13 @@ export const styles = StyleSheet.create({
     paddingRight: '7%',
     textAlign: 'center',
   },
+  subTextView1: {
+    flex: 1,
+    width: '100%',
+    paddingLeft: '7%',
+    paddingRight: '7%',
+    textAlign: 'center',
+  },
   btnView: {
     flex: 1,
     width: '100%',
