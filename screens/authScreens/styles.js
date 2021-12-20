@@ -35,17 +35,21 @@ export const styles = StyleSheet.create({
     backgroundColor: 'white'
   },
   subTextView: {
-    flex:1,
+    flex: 1,
     width: '100%',
     paddingLeft: '7%',
     paddingRight: '7%',
     textAlign: 'center',
+    display:'flex',
+    justifyContent:'center'
   },
   btnView: {
     flex: 1,
     width: '100%',
     paddingLeft: '7%',
     paddingRight: '7%',
+    display: 'flex',
+    justifyContent: 'center'
   },
   imageWrap: {
     flex: 6,
