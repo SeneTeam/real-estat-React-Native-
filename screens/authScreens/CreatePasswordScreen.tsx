@@ -15,11 +15,11 @@ const CreatePassword = ({ navigation, route }: { navigation: NavigationProp<any>
     }
     return (
         <View style={styles.loginPageStyle}>
-            <View style={styles.loginHeader}>
+            {/* <View style={styles.loginHeader}>
                 <TouchableOpacity
                     onPress={() =>
                         navigation.goBack()} >
-                    <Image style={styles.buttonImage} source={require('../../assets/icons/backBtn.png')} />
+                    <Image style={styles.buttonImage} source={require('./assets/icons/backBtn.png')} />
                 </TouchableOpacity>
             </View>
             <View style={styles.subTextView}>
@@ -63,7 +63,7 @@ const CreatePassword = ({ navigation, route }: { navigation: NavigationProp<any>
                 onPress={() => {
                     setChecked(!checked);
                 }}
-            />
+            /> */}
             <View style={{ padding: '7%', width: '100%', justifyContent: 'center' }}>
                 <TouchableOpacity
                 // onPress={() => navigation.navigate('Register', { name: 'Jane' })}

@@ -1,4 +1,4 @@
-import { styles } from '../../screens/authScreens/styles.js';
+import { styles } from './styles.js';
 import { Image, View, TouchableOpacity, } from 'react-native';
 import { NavigationProp } from '@react-navigation/native';
 import OutlineInput from 'react-native-outline-input';
@@ -16,11 +16,11 @@ const Register = ({ navigation, route }: { navigation: NavigationProp<any>, rout
   }
   return (
     <View style={styles.loginPageStyle}>
-      <View style={styles.loginHeader}>
+      {/* <View style={styles.loginHeader}>
         <TouchableOpacity
           onPress={() =>
             navigation.goBack()} >
-          <Image style={styles.buttonImage} source={require('../../assets/icons/backBtn.png')} />
+          <Image style={styles.buttonImage} source={require('./assets/icons/backBtn.png')} />
         </TouchableOpacity>
       </View>
       <View style={styles.subTextView_title}>
@@ -71,10 +71,10 @@ const Register = ({ navigation, route }: { navigation: NavigationProp<any>, rout
         onPress={() => {
           setChecked(!checked);
         }}
-      />
+      /> */}
       <View style={{ padding: '7%', width: '100%', justifyContent: 'center' }}>
         <TouchableOpacity
-        // onPress={() => navigation.navigate('Register', { name: 'Jane' })}
+          onPress={() => navigation.navigate('QuestionStart')}
         >
           <Text style={styles.btnStyle} >GET STARTED</Text>
         </TouchableOpacity>

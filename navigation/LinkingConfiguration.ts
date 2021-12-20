@@ -19,6 +19,10 @@ const linking: LinkingOptions<RootStackParamList> = {
       EnterCode: 'entercode',
       CreatePassword: 'createpassword',
       Register: 'register',
+      QuestionStart: 'questionstart',
+      QuestionGender: 'questiongender',
+      QuestionAge: 'questionage',
+      QuestionId: 'questionid',
       Root: {
         screens: {
           Home: {

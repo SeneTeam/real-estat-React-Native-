@@ -49,11 +49,11 @@ const EnterCode = ({ navigation, route }: { navigation: NavigationProp<any>, rou
     }, [value])
     return (
         <View style={styles.loginPageStyle}>
-            <View style={styles.loginHeader}>
+            {/* <View style={styles.loginHeader}>
                 <TouchableOpacity
                     onPress={() =>
                         navigation.goBack()} >
-                    <Image style={styles.buttonImage} source={require('../../assets/icons/backBtn.png')} />
+                    <Image style={styles.buttonImage} source={require('./assets/icons/backBtn.png')} />
                 </TouchableOpacity>
             </View>
             <View style={styles.subTextView}>
@@ -94,7 +94,7 @@ const EnterCode = ({ navigation, route }: { navigation: NavigationProp<any>, rou
                         <Text style={styles.subText} >Resend Code</Text>
                     </View>
                 </TouchableOpacity>
-            </View>
+            </View> */}
 
         </View>
     );

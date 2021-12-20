@@ -1,34 +1,9 @@
 import { StyleSheet } from 'react-native';
 export const styles = StyleSheet.create({
-  input: {
-    height: 40,
-    margin: 12,
-    borderWidth: 1,
-    padding: 10,
-  },
-  buttonImage: {
-    width: '50px',
-    height: '50px',
-    margin: '25px'
-  },
-  loginForm: {
-    padding: '7%'
-  },
-  loginHeader: {
-    width: '100%',
-    height: '20%'
-  },
-  loginPageStyle: {
-    backgroundColor: 'white',
-    width: '100%',
-    height: '100%',
-  },
-  textInput: {
-    width: '100%',
-    height: 64,
-    borderRadius: 15,
-    fontSize: 16,
-    backgroundColor: '#F2F3F7'
+  container: {
+    flex: 1,
+    alignItems: 'center',
+    backgroundColor: 'white'
   },
   btnStyle: {
     backgroundColor: '#30C0E9',
@@ -36,11 +11,6 @@ export const styles = StyleSheet.create({
     borderRadius: 23,
     textAlign: 'center',
     color: 'white'
-  },
-  container: {
-    flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
   },
   title: {
     fontSize: 28,
@@ -50,77 +20,53 @@ export const styles = StyleSheet.create({
     fontSize: 16,
     fontWeight: '400',
     textAlign: 'center',
-    paddingTop: '7% ',
-    paddingBottom: '7% '
+    paddingTop: '2%',
+    paddingBottom: '3%'
   },
   subText: {
     fontSize: 16,
     color: '#ACB7C2',
-    paddingTop: '2%',
-    paddingBottom: '2%',
-  },
-  separator: {
-    marginVertical: 30,
-    height: 1,
-    width: '80%',
+    marginTop: '2%',
+    marginBottom: '2%',
   },
   textView: {
+    flex: 4,
     width: '100%',
-    height: '38%'
+    backgroundColor: 'white'
   },
   subTextView: {
+    flex:1,
     width: '100%',
     paddingLeft: '7%',
     paddingRight: '7%',
     textAlign: 'center',
-    marginBottom: '10px',
   },
-  subTextView_title: {
+  btnView: {
+    flex: 1,
     width: '100%',
     paddingLeft: '7%',
     paddingRight: '7%',
-    textAlign: 'center',
-    marginBottom: '20%',
   },
-  subTextView1: {
-    height: '19%',
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  subTextView_forgot: {
-    display: 'flex',
-    alignItems: 'center',
-    width: '100%',
-    paddingLeft: '7%',
-    paddingRight: '7%',
-    textAlign: 'center',
-    height: '15%'
-  },
-  startButton: {
-    padding: 20,
-  },
-  image: {
+  imageWrap: {
+    flex: 6,
     marginTop: 0,
     width: '100%',
-    height: '62%'
   },
-  loginBtn: {
-    color: '#30C0E9'
-  },
-  buttonStyle: {
-    borderRadius: 23
+  image: {
+    flex: 1,
+    resizeMode: 'stretch'
   },
   buttonContainer: {
     borderRadius: 23,
-
-  },
-  loginForm_input: {
-    padding: '5%',
-    paddingBottom: '0',
-    marginBottom: '10px'
   },
   login_btnStyle: {
-    color: 'blue',
-  }
+    color: '#30C0E9',
+    fontSize: 16,
+    paddingTop: '2%',
+    paddingBottom: '2%',
+  },
+  loginWrap: {
+    flex: 1,
+    backgroundColor: 'white'
+  },
 });

@@ -3,7 +3,6 @@ import { SafeAreaProvider } from 'react-native-safe-area-context';
 import useCachedResources from './hooks/useCachedResources';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import Navigation from './navigation';
-import './App.css';
 
 const Stack = createNativeStackNavigator();
 

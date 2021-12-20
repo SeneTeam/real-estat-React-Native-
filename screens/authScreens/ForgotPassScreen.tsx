@@ -13,11 +13,11 @@ const ForgotPass = ({ navigation, route }: { navigation: NavigationProp<any>, ro
     }
     return (
         <View style={styles.loginPageStyle}>
-            <View style={styles.loginHeader}>
+            {/* <View style={styles.loginHeader}>
                 <TouchableOpacity
                     onPress={() =>
                         navigation.goBack()} >
-                    <Image style={styles.buttonImage} source={require('../../assets/icons/backBtn.png')} />
+                    <Image style={styles.buttonImage} source={require('./assets/icons/backBtn.png')} />
                 </TouchableOpacity>
             </View>
             <View style={styles.subTextView_title}>
@@ -45,8 +45,8 @@ const ForgotPass = ({ navigation, route }: { navigation: NavigationProp<any>, ro
                 >
                     <Text style={styles.btnStyle} >SEND</Text>
                 </TouchableOpacity>
-            </View>
-
+            </View> */}
+            forgot
         </View>
     );
 };

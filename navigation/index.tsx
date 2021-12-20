@@ -10,14 +10,25 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import * as React from 'react';
 import { ColorSchemeName, Pressable } from 'react-native';
 
-import Colors from '../constants/Colors';
 import useColorScheme from '../hooks/useColorScheme';
+
 import WelcomeScreen from '../screens/authScreens/WelcomeScreen';
+
+// ****************** Auth ***************************
 import LoginScreen from '../screens/authScreens/LoginScreen';
 import ForgotPassScreen from '../screens/authScreens/ForgotPassScreen';
 import EnterCodeScreen from '../screens/authScreens/EnterCodeScreen';
 import CreatePasswordScreen from '../screens/authScreens/CreatePasswordScreen';
 import RegisterScreen from '../screens/authScreens/RegisterScreen';
+
+
+// ****************** Question ***************************
+import QuestionStartScreen from '../screens/questionScreens/QuestionStart';
+import QuestionGenderScreen from '../screens/questionScreens/QuestionGender';
+import QuestionAgeScreen from '../screens/questionScreens/QuestionAge';
+import QuestionIdScreen from '../screens/questionScreens/QuestionId';
+
+// ****************** TAB bar **********************
 import HomeScreen from '../screens/tabScreens/HomeScreen';
 import SearchScreen from '../screens/tabScreens/SearchScreen';
 import FeedScreen from '../screens/tabScreens/FeedScreen';
@@ -51,7 +62,11 @@ function RootNavigator() {
       <Stack.Screen name="EnterCode" component={EnterCodeScreen} options={{ headerShown: false }} />
       <Stack.Screen name="CreatePassword" component={CreatePasswordScreen} options={{ headerShown: false }} />
       <Stack.Screen name="Register" component={RegisterScreen} options={{ headerShown: false }} />
-      <Stack.Screen name="Root" component={BottomTabNavigator} options={{ headerShown: false }} />      
+      <Stack.Screen name="QuestionStart" component={QuestionStartScreen} options={{ headerShown: false }} />
+      <Stack.Screen name="QuestionGender" component={QuestionGenderScreen} options={{ headerShown: false }} />
+      <Stack.Screen name="QuestionAge" component={QuestionAgeScreen} options={{ headerShown: false }} />
+      <Stack.Screen name="QuestionId" component={QuestionIdScreen} options={{ headerShown: false }} />
+      <Stack.Screen name="Root" component={BottomTabNavigator} options={{ headerShown: false }} />
     </Stack.Navigator>
   );
 }
@@ -69,10 +84,10 @@ function BottomTabNavigator() {
     <BottomTab.Navigator
       screenOptions={{
         tabBarStyle: {
-          marginHorizontal:15,
-          marginBottom:15,
-          height:76,
-          borderRadius:25
+          marginHorizontal: 15,
+          marginBottom: 15,
+          height: 76,
+          borderRadius: 25
         },
         tabBarShowLabel: false
       }}
