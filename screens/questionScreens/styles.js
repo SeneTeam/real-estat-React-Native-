@@ -188,7 +188,7 @@ export const styles = StyleSheet.create({
     borderWidth: 1,
     borderRadius: 5
   },
-  progGenderINId:{
+  progGenderINId: {
     height: 12,
     flexDirection: "row",
     width: '99%',
@@ -196,5 +196,29 @@ export const styles = StyleSheet.create({
     borderColor: '#7BC67E',
     borderWidth: 1,
     borderRadius: 5
+  },
+  picker: {
+    // display:'flex',
+    // flex:1,
+    alignItems: 'center',
+    // textAlign:'center',
+  },
+  wheelTitle: {
+    color: 'black',
+    fontSize: 28
+  },
+  selectedWheel: {
+    borderColor: '#30C0E9',
+    borderWidth: 1,
+    borderRadius: 10,
+    borderStyle: 'solid',
+    backgroundColor: 'white',
+    alignItems: 'center',
+    display: 'flex'
+  },
+  pickerWrap: {
+    borderBottomColor: '#30C0E9',
+    borderColor: '#30C0E9',
+
   },
 });

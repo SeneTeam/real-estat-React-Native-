@@ -3,7 +3,6 @@ import { Image, View, TouchableOpacity, } from 'react-native';
 import { NavigationProp } from '@react-navigation/native';
 import React, { useState } from 'react';
 import WheelPicker from 'react-native-wheely';
-import * as Progress from 'react-native-progress';
 import { Text } from '../../components/Themed';
 
 
@@ -21,18 +20,38 @@ const QuestionAge = ({ navigation, route }: { navigation: NavigationProp<any>, r
             <View style={styles.subTextView_title}>
                 <Text style={styles.title}>What's your age?</Text>
             </View>
-            <View style={styles.radioBtn}>
-                {/* <RadioButton.Group onValueChange={newValue => setValue(newValue)} value={value}>
-                    <View style={styles.radioText}>
-                        <RadioButton value="Mail" /><Text>Mail</Text>
+            <View style={styles.picker}>
+                <View style={styles.pickerWrap}>
+                    <View style={{ display: 'flex', justifyContent: 'center' }}>
+                        <Text
+                            style={{
+                                borderBottomColor: '#30C0E9',
+                                borderBottomWidth: 1,
+                                position: 'absolute',
+                                top: '40%',
+                                right: '100%',
+                                width: '100%',
+                            }}
+                        ></Text>
+                        <WheelPicker
+                            selectedIndex={3}
+                            options={age}
+                            onChange={(index) => setSelectedIndex(index)}
+                            itemTextStyle={styles.wheelTitle}
+                            selectedIndicatorStyle={styles.selectedWheel}
+                        />
+                        <Text
+                            style={{
+                                borderBottomColor: '#30C0E9',
+                                borderBottomWidth: 1,
+                                position: 'absolute',
+                                top: '40%',
+                                left: '100%',
+                                width: '100%',
+                            }}
+                        ></Text>
                     </View>
-                    <View style={styles.radioText}>
-                        <RadioButton value="Femail" /><Text>Femail</Text>
-                    </View>
-                    <View style={styles.radioText}>
-                        <RadioButton value="Non-binary" /><Text>Non-binary</Text>
-                    </View>
-                </RadioButton.Group> */}
+                </View>
 
             </View>
             <View style={{ flex: 1 }}>
