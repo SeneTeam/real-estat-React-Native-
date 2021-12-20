@@ -14,21 +14,19 @@ const CreatePassword = ({ navigation, route }: { navigation: NavigationProp<any>
         navigation.navigate('Register')
     }
     return (
-        <View style={styles.loginPageStyle}>
-            {/* <View style={styles.loginHeader}>
-                <TouchableOpacity
-                    onPress={() =>
-                        navigation.goBack()} >
-                    <Image style={styles.buttonImage} source={require('./assets/icons/backBtn.png')} />
-                </TouchableOpacity>
+        <View style={styles.loginWrap}>
+            <View >
+                <View style={{ width: 50, height: 50, margin: 25 }}></View>
             </View>
-            <View style={styles.subTextView}>
-                <Text style={styles.title}>Create new password</Text>
+            <View style={{ marginBottom: 15 }}>
+                <View style={{ alignItems: 'center' }}>
+                    <Text style={styles.title}>Check email</Text>
+                </View>
+                <View style={{ alignItems: 'center', }}>
+                    <Text style={styles.subTextForgot}>Enter the code that we sent to your email</Text>
+                </View>
             </View>
-            <View style={styles.subTextView}>
-                <Text style={styles.subText}>You new password must be different from previous used passwords</Text>
-            </View>
-            <View style={styles.loginForm_input}>
+            <View style={styles.loginForm}>
                 <OutlineInput
                     value={password}
                     onChangeText={(e: string) => setPassword(e)}
@@ -41,7 +39,7 @@ const CreatePassword = ({ navigation, route }: { navigation: NavigationProp<any>
                     passiveValueColor="#30c0e9"
                 />
             </View>
-            <View style={styles.loginForm_input}>
+            <View style={styles.loginForm}>
                 <OutlineInput
                     value={newpassword}
                     onChangeText={(e: string) => setNewPassword(e)}
@@ -63,7 +61,7 @@ const CreatePassword = ({ navigation, route }: { navigation: NavigationProp<any>
                 onPress={() => {
                     setChecked(!checked);
                 }}
-            /> */}
+            />
             <View style={{ padding: '7%', width: '100%', justifyContent: 'center' }}>
                 <TouchableOpacity
                 // onPress={() => navigation.navigate('Register', { name: 'Jane' })}
