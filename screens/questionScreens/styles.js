@@ -9,6 +9,7 @@ export const styles = StyleSheet.create({
     padding: '7%'
   },
   questionWrap: {
+    flex: 1,
     backgroundColor: 'white',
     width: '100%',
     height: '100%',
@@ -21,10 +22,12 @@ export const styles = StyleSheet.create({
     color: 'white'
   },
   titleHey: {
+    textAlign: 'center',
     fontSize: 45,
     fontWeight: 'bold',
   },
   title: {
+    textAlign: 'center',
     fontSize: 28,
     fontWeight: 'bold',
   },
@@ -91,7 +94,6 @@ export const styles = StyleSheet.create({
     marginBottom: '10%',
   },
   subTextView1: {
-    height: '15%',
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
@@ -123,7 +125,6 @@ export const styles = StyleSheet.create({
     borderRadius: 23,
   },
   questionBtn: {
-    height: '13%',
     paddingRight: '7%',
     paddingLeft: '7%',
     width: '100%',
