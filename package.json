@@ -35,6 +35,7 @@
     "react-native": "0.64.3",
     "react-native-confirmation-code-field": "6",
     "react-native-elements": "^3.4.2",
+    "react-native-hr-component": "^2.0.3",
     "react-native-outline-input": "^1.0.8",
     "react-native-paper": "^4.11.1",
     "react-native-progress": "^5.0.0",

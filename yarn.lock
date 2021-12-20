@@ -11196,6 +11196,11 @@ react-native-elements@^3.4.2:
     react-native-ratings "8.0.4"
     react-native-size-matters "^0.3.1"
 
+react-native-hr-component@^2.0.3:
+  version "2.0.3"
+  resolved "https://registry.yarnpkg.com/react-native-hr-component/-/react-native-hr-component-2.0.3.tgz#fcde35502eea4788a35357b7325a771e6fd39dff"
+  integrity sha512-cc+CLUm9o+YO09dk9a7Ix4zgA1QGc/xYs0CBsLPe254nkQMojmJQ9aC3muUtU8x0+usvTj35ICQLH6QulTiQgQ==
+
 react-native-iphone-x-helper@^1.3.0, react-native-iphone-x-helper@^1.3.1:
   version "1.3.1"
   resolved "https://registry.yarnpkg.com/react-native-iphone-x-helper/-/react-native-iphone-x-helper-1.3.1.tgz#20c603e9a0e765fd6f97396638bdeb0e5a60b010"
