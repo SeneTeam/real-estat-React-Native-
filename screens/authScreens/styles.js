@@ -92,6 +92,7 @@ export const styles = StyleSheet.create({
   },
   loginForm: {
     // flex: 1,
+    marginBottom: 15,
     display: 'flex',
     justifyContent: 'center',
     paddingLeft: '5%',
