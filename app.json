@@ -2,6 +2,8 @@
   "expo": {
     "name": "real-estat",
     "slug": "real-estat",
+    "sdkVersion": "25.0.0 or corresponding version",
+    "privacy": "public",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
