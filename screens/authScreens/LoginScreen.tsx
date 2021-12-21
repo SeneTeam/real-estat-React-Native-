@@ -9,6 +9,8 @@ import { TextInput } from 'react-native-paper';
 const Login = ({ navigation, route }: { navigation: NavigationProp<any>, route: any }) => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
+    const [email_error, setEmail_error] = useState('');
+    const [password_error, setPassword_error] = useState('');
     const onPress = () => {
         navigation.navigate('Register')
     }
@@ -34,6 +36,7 @@ const Login = ({ navigation, route }: { navigation: NavigationProp<any>, route: 
                     onChangeText={text => setEmail(text)}
                     error={false}
                 />
+                <Text style={{ fontSize: 12, color: 'red', marginLeft: '5%' }}>&nbsp;{email_error}</Text>
             </View>
             <View style={styles.loginForm}>
                 <TextInput
@@ -45,6 +48,7 @@ const Login = ({ navigation, route }: { navigation: NavigationProp<any>, route: 
                     onChangeText={text => setPassword(text)}
                     right={<TextInput.Icon name="eye" />}
                 />
+                <Text style={{ fontSize: 12, color: 'red', marginLeft: '5%' }}>&nbsp;{email_error}</Text>
             </View>
             <View style={styles.loginForm}>
                 <TouchableOpacity

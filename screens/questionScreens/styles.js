@@ -199,7 +199,7 @@ export const styles = StyleSheet.create({
   },
   picker: {
     // display:'flex',
-    // flex:1,
+    flex:1,
     alignItems: 'center',
     // textAlign:'center',
   },
