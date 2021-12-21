@@ -29,7 +29,7 @@ import QuestionAgeScreen from '../screens/questionScreens/QuestionAge';
 import QuestionIdScreen from '../screens/questionScreens/QuestionId';
 
 // ****************** TAB bar **********************
-import HomeScreen from '../screens/tabScreens/HomeScreen';
+import HomeScreen from '../screens/tabScreens/homescreen/HomeScreen';
 import SearchScreen from '../screens/tabScreens/SearchScreen';
 import FeedScreen from '../screens/tabScreens/FeedScreen';
 import FavoriteScreen from '../screens/tabScreens/FavoriteScreen';
@@ -87,7 +87,13 @@ function BottomTabNavigator() {
           marginHorizontal: 15,
           marginBottom: 15,
           height: 76,
-          borderRadius: 25
+          borderRadius: 25,
+          position:'absolute',
+          shadowColor: '#000',
+          shadowOffset: { width: 0, height: 2 },
+          shadowOpacity: 0.2,
+          shadowRadius: 15,  
+          elevation: 20
         },
         tabBarShowLabel: false
       }}
