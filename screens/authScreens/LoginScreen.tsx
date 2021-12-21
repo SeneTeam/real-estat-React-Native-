@@ -4,6 +4,7 @@ import { NavigationProp } from '@react-navigation/native';
 import React, { useState } from 'react';
 import OutlineInput from 'react-native-outline-input';
 import { Text } from '../../components/Themed';
+import { TextInput } from 'react-native-paper';
 
 const Login = ({ navigation, route }: { navigation: NavigationProp<any>, route: any }) => {
     const [email, setEmail] = useState('');
@@ -24,36 +25,25 @@ const Login = ({ navigation, route }: { navigation: NavigationProp<any>, route: 
                     <Text style={styles.title}>Welcome Back!</Text>
                 </View>
             </View>
-            {/* <View style={{ flex: 1 }}>
-                <View style={styles.loginVerticalPart}>
-                    <Text style={styles.title}>Welcome Back!</Text>
-                </View>
-            </View> */}
-            {/* <View style={{ flex: 1 }}> */}
             <View style={styles.loginForm}>
-                <OutlineInput
+                <TextInput
+                    autoComplete={true}
+                    mode="outlined"
+                    label="Email"
                     value={email}
-                    onChangeText={(e: string) => setEmail(e)}
-                    label="UserEmail"
-                    activeValueColor="#6c63fe"
-                    activeBorderColor="#6c63fe"
-                    activeLabelColor="#6c63fe"
-                    passiveBorderColor="#30c0e9"
-                    passiveLabelColor="#bbb7ff"
-                    passiveValueColor="#30c0e9"
+                    onChangeText={text => setEmail(text)}
+                    error={false}
                 />
             </View>
             <View style={styles.loginForm}>
-                <OutlineInput
-                    value={password}
-                    onChangeText={(e: string) => setPassword(e)}
+                <TextInput
+                    autoComplete={true}
+                    mode="outlined"
                     label="Password"
-                    activeValueColor="#6c63fe"
-                    activeBorderColor="#6c63fe"
-                    activeLabelColor="#6c63fe"
-                    passiveBorderColor="#30c0e9"
-                    passiveLabelColor="#bbb7ff"
-                    passiveValueColor="#30c0e9"
+                    secureTextEntry
+                    value={password}
+                    onChangeText={text => setPassword(text)}
+                    right={<TextInput.Icon name="eye" />}
                 />
             </View>
             <View style={styles.loginForm}>
