@@ -4,6 +4,7 @@ import useCachedResources from './hooks/useCachedResources';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import Navigation from './navigation';
 
+
 const Stack = createNativeStackNavigator();
 
 export default function App() {
