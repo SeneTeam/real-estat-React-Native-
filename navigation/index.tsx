@@ -29,13 +29,18 @@ import QuestionAgeScreen from '../screens/questionScreens/QuestionAge';
 import QuestionIdScreen from '../screens/questionScreens/QuestionId';
 
 // ****************** TAB bar **********************
-import HomeScreen from '../screens/tabScreens/HomeScreen';
-import SearchScreen from '../screens/tabScreens/SearchScreen';
-import FeedScreen from '../screens/tabScreens/FeedScreen';
-import FavoriteScreen from '../screens/tabScreens/FavoriteScreen';
-import UserScreen from '../screens/tabScreens/UserScreen';
+import HomeScreen from '../screens/tabScreens/homescreen/HomeScreen';
+import SearchScreen from '../screens/tabScreens/homesearch/SearchScreen';
+import UserScreen from '../screens/tabScreens/userscreen/UserScreen';
 import { RootStackParamList, RootTabParamList, RootTabScreenProps } from '../types';
 import LinkingConfiguration from './LinkingConfiguration';
+import HomeDetailScreen from '../screens/tabScreens/homescreen/HomeDetailScreen';
+//***************** Feed Screen **************
+import FeedScreen from '../screens/tabScreens/feedscreen/FeedScreen';
+//***************** favorite ********************
+import FavoriteScreen from '../screens/tabScreens/favorite/FavoriteScreen';
+import FavoriteDetailScreen from '../screens/tabScreens/favorite/FavoriteDetailScreen';
+
 
 export default function Navigation({ colorScheme }: { colorScheme: ColorSchemeName }) {
   return (
@@ -76,7 +81,6 @@ function RootNavigator() {
  * https://reactnavigation.org/docs/bottom-tab-navigator
  */
 const BottomTab = createBottomTabNavigator<RootTabParamList>();
-
 function BottomTabNavigator() {
   const colorScheme = useColorScheme();
 
@@ -87,14 +91,15 @@ function BottomTabNavigator() {
           marginHorizontal: 15,
           marginBottom: 15,
           height: 76,
-          borderRadius: 25
+          borderRadius: 25,
+          position: 'absolute'
         },
         tabBarShowLabel: false
       }}
     >
       <BottomTab.Screen
         name="Home"
-        component={HomeScreen}
+        component={Homestack}
         options={{
           tabBarIcon: ({ color }) => <TabBarIcon name="home" color={color} />,
           headerShown: false
@@ -104,7 +109,7 @@ function BottomTabNavigator() {
         name="Search"
         component={SearchScreen}
         options={{
-          tabBarIcon: ({ color }) => <TabBarIcon name="feature-search-outline" color={color} />,
+          tabBarIcon: ({ color }) => <TabBarIcon name="email-search" color={color} />,
           headerShown: false
         }}
       />
@@ -118,7 +123,7 @@ function BottomTabNavigator() {
       />
       <BottomTab.Screen
         name="Favorite"
-        component={FavoriteScreen}
+        component={FavoriteStack}
         options={{
           tabBarIcon: ({ color }) => <TabBarIcon name="heart" color={color} />,
           headerShown: false
@@ -136,6 +141,24 @@ function BottomTabNavigator() {
   );
 }
 
+const Home_Stack = createNativeStackNavigator();
+function Homestack() {
+  return (
+    <Home_Stack.Navigator screenOptions={{ headerShown: false }}>
+      <Home_Stack.Screen name="Home" component={HomeScreen} />
+      <Home_Stack.Screen name="HomeDetail" component={HomeDetailScreen} />
+    </Home_Stack.Navigator>
+  );
+}
+const Favorite_Stack = createNativeStackNavigator();
+function FavoriteStack() {
+  return (
+    <Favorite_Stack.Navigator screenOptions={{ headerShown: false }}>
+      <Favorite_Stack.Screen name="Favorite" component={FavoriteScreen} />
+      <Favorite_Stack.Screen name="FavoriteDetail" component={FavoriteDetailScreen} />
+    </Favorite_Stack.Navigator>
+  );
+}
 /**
  * You can explore the built-in icon families and icons on the web at https://icons.expo.fyi/
  */

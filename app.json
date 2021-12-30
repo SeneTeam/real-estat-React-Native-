@@ -26,7 +26,8 @@
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "package": "com.sergayvladimiru.realestat"
+      "package": "com.sergayvladimiru.realestat",
+      "versionCode": 1
     },
     "web": {
       "favicon": "./assets/images/favicon.png"

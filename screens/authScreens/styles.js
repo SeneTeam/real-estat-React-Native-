@@ -1,4 +1,4 @@
-import { StyleSheet } from 'react-native';
+import { StyleSheet, StatusBar } from 'react-native';
 export const styles = StyleSheet.create({
   container: {
     flex: 1,
@@ -10,30 +10,35 @@ export const styles = StyleSheet.create({
     padding: 15,
     borderRadius: 23,
     textAlign: 'center',
-    color: 'white'
+    color: 'white',
+    fontSize: 18
   },
   title: {
-    fontSize: 28,
+    fontSize: 32,
     fontWeight: 'bold',
+    color: '#000'
   },
   loginTitle: {
     fontSize: 16,
     fontWeight: '400',
     textAlign: 'center',
     paddingTop: '2%',
-    paddingBottom: '3%'
+    paddingBottom: '3%',
+    color: '#000'
   },
   subText: {
-    fontSize: 16,
+    fontSize: 18,
     color: '#ACB7C2',
     marginTop: '2%',
     marginBottom: '2%',
+    lineHeight: 30
   },
   subTextForgot: {
-    fontSize: 16,
+    fontSize: 18,
     textAlign: 'center',
     marginTop: '2%',
     marginBottom: '2%',
+    color: '#ACB7C2',
   },
   textView: {
     flex: 4,
@@ -82,7 +87,12 @@ export const styles = StyleSheet.create({
   },
   loginWrap: {
     flex: 1,
-    backgroundColor: 'white'
+    backgroundColor: 'white',
+    marginTop: StatusBar.currentHeight,
+    padding: 10,
+  },
+  containerDiv: {
+    flex: 1
   },
   loginVerticalPart: {
     alignItems: 'center',
@@ -98,4 +108,12 @@ export const styles = StyleSheet.create({
     paddingLeft: '5%',
     paddingRight: '4%',
   },
+  err_txt: {
+    paddingTop: 4,
+    paddingBottom: 4,
+    paddingLeft: 12,
+    paddingRight: 12,
+    fontSize: 12,
+    color: 'red'
+  }
 });

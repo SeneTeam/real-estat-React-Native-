@@ -1,11 +1,11 @@
 import React from 'react';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 import useCachedResources from './hooks/useCachedResources';
-import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import Navigation from './navigation';
+import config from './aws-exports';
+import Amplify from '@aws-amplify/core';
 
-
-const Stack = createNativeStackNavigator();
+Amplify.configure(config);
 
 export default function App() {
   const isLoadingComplete = useCachedResources();
