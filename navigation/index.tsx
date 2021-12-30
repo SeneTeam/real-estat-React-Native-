@@ -40,6 +40,8 @@ import FeedScreen from '../screens/tabScreens/feedscreen/FeedScreen';
 //***************** favorite ********************
 import FavoriteScreen from '../screens/tabScreens/favorite/FavoriteScreen';
 import FavoriteDetailScreen from '../screens/tabScreens/favorite/FavoriteDetailScreen';
+//*********************QuestionnaireScreen**************** */
+import QuestionnaireScreen from '../screens/tabScreens/userscreen/Questionnaire/QuestionnaireScreen';
 
 
 export default function Navigation({ colorScheme }: { colorScheme: ColorSchemeName }) {
@@ -72,6 +74,7 @@ function RootNavigator() {
       <Stack.Screen name="QuestionAge" component={QuestionAgeScreen} options={{ headerShown: false }} />
       <Stack.Screen name="QuestionId" component={QuestionIdScreen} options={{ headerShown: false }} />
       <Stack.Screen name="Root" component={BottomTabNavigator} options={{ headerShown: false }} />
+      <Stack.Screen name="Questionnaire" component={QuestionnaireScreen} options={{ headerShown: false }} />
     </Stack.Navigator>
   );
 }
